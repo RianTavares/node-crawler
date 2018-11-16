@@ -16,19 +16,36 @@ const options = {
 const scrapped = {
   feed: [],
 };
+let articleLink = '';
+let articleTitle = '';
 
 // creating a promise to work on the result of URL requested
 request(options)
   .then($ => $('item'))
   .then((item) => {
+
+    // const description = cheerio.parseHTML(item[0].children[3].children[0].children[0].data);
+    // console.log(item[0].children[item[0].children.length-6].children[0].data);
+    // console.log(item[0].children[1].children[0].children[0].data);
+
+
     // going through all the items one by one
+    let int = 0;
     for (let i = 0, end = item.length; i < end; i += 1) {
       // creating a variable to receive all the content of the <description></description> as a HTML
       const description = cheerio.parseHTML(item[i].children[3].children[0].children[0].data);
+      for (let ti = 0, endti = item[i].children.length; ti < endti; ti+=1) {
+        if (item[i].children[ti].name === 'title') {
+          articleTitle = item[i].children[ti].children[0].children[0].data;
+        }
+        if (item[i].children[ti].name === 'link') {
+          articleLink = item[i].children[ti].children[0].data;
+        }
+      }
       // referencing a new object that will be pushed into feed[]
       const text = {
-        title: '',
-        link: '',
+        title: articleTitle,
+        link: articleLink,
         description: [],
       };
       // walking through all the tags into <description></description> one by one
