@@ -181,7 +181,7 @@ const responseTextArray = ' A quinta geração do Honda CR-V cresceu, ganhou mot
 
 // Tests
 // if passed the rigth format to runningEachItemAndCatchInfo with content should return the responseFeed
-test('it should the crawler response in Json format', () => {
+test('it should return the crawler response in Json format', () => {
   expect(jsonCreator(feed)).toEqual(responseFeed);
 });
 
