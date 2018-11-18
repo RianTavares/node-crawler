@@ -1,4 +1,4 @@
-const myMethods = require('./app');
+const myMethods = require('../src/functions');
 const cheerio = require('cheerio');
 
 // importing functions
