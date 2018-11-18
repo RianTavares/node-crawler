@@ -9,7 +9,10 @@
   "author": "Rian Tavares Brum Alves",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5"
   },
