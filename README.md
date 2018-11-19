@@ -1,3 +1,4 @@
+<p align="center"><a href="https://github.com/RianTavares/node-crawler" alt="AutoEsporteBot Logo"><img src="https://raw.githubusercontent.com/RianTavares/node-crawler/master/src/images/thumbnail_autoesporte-JS.png?token=AIhXfwE5prYOGa9CzQR5-gxQ9CNVTOvhks5b-3OUwA%3D%3D"></a></p>
 
 <p align="center"><h1 align="center">AutoEsporteBot.js</h1></p>
 
