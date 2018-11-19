@@ -26,8 +26,8 @@ module.exports = () => {
   /* This is a login validation for a test enviroment and it will just works if
     there is only single entries into dbSimulator */
   api.post('/login', (req, res) => {
-    const { username } = req.body.username;
-    const { password } = req.body.password;
+    const username = req.body.username;
+    const password = req.body.password;
     const userAllowed = dataBase.filter((value) => {
       if (value.username === username && value.password === password) {
         res.send(jwt.createSignature(username));
