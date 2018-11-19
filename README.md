@@ -35,3 +35,10 @@ This project has a database simulated in a js file `/src/models/dbSimulator.js`,
 4. Open a `GET` request and choose the tab "Authorization" with the type `Bearer Token`
 5. Then paste the request response previously copied in step 3 into "Token" input and send de request
 
+Demo:
+<p align="center"><img src="https://raw.githubusercontent.com/RianTavares/node-crawler/master/src/images/video1.gif?token=AIhXf1fqxdqGMSfYkcsgJriCzdnJJWXFks5b-5PtwA%3D%3D"></p>
+
+#### Run the project using the container
+
+Demo:
+<p align="center"><img src="https://raw.githubusercontent.com/RianTavares/node-crawler/master/src/images/video2.gif?token=AIhXf6TevJyuxawLiUhWxwAXkE6oJR8fks5b-5PuwA%3D%3D"></p>
