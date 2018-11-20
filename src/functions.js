@@ -13,7 +13,7 @@ const mergeText = (textArray) => {
       // then aux sum his previous value with the new string
       aux += textArray[i].data;
       /* if the <p> has more children and using recursion to sum
-                  the string value of all children into aux variable */
+                        the string value of all children into aux variable */
     } else if (textArray[i].children && textArray[i].children.length > 0) {
       // aux sum his previous value with the new string
       aux += mergeText(textArray[i].children);
@@ -29,7 +29,7 @@ const getTextAndDivs = (jsonInfo, description) => {
     // validating if the current tag is <p></p>
     if (description[desc].name === 'p') {
       /* calling the merge function to return the text content to populate
-            description when <p></p> */
+                  description when <p></p> */
       const content = mergeText(description[desc].children);
       // just validating if the <p></p> isn't empty
       if (content !== '') {
@@ -72,11 +72,27 @@ const getTextAndDivs = (jsonInfo, description) => {
           ) {
             // validating if the current tag is <li></li>
             if (description[desc].children[j].children[li].name === 'li') {
-              // pushing into the array the link inside the current <li><li>
-              links.push(
-                description[desc].children[j].children[li].children[1].attribs
-                  .href,
-              );
+              if (description[desc].children[j].children[li].children) {
+                for (
+                  let eachLi = 0,
+                    endEachLi = description[desc].children[j].children[li].children
+                      .length;
+                  eachLi < endEachLi;
+                  eachLi += 1
+                ) {
+                  if (
+                    description[desc].children[j].children[li].children[eachLi]
+                      .name === 'a'
+                  ) {
+                    // pushing into the array the link inside the current <li><li>
+                    links.push(
+                      description[desc].children[j].children[li].children[
+                        eachLi
+                      ].attribs.href,
+                    );
+                  }
+                }
+              }
             }
           }
           // pushing into description de links block
@@ -92,7 +108,7 @@ const getTextAndDivs = (jsonInfo, description) => {
 };
 
 /* main function to run through all the <items> and return de Json ready with all the infos catched
-      from the site */
+            from the site */
 const runningEachItemAndCatchInfo = (itemArray) => {
   if (typeof itemArray === 'object') {
     // creating a object that will contain all the content from the result of the crawler
@@ -131,13 +147,12 @@ const runningEachItemAndCatchInfo = (itemArray) => {
         }
       }
       /* referencing a new object that will be pushed into feed[]
-            and setting the title and link value */
+                  and setting the title and link value */
       const jsonInfo = {
         title: articleTitle,
         link: articleLink,
         description: [],
       };
-
       // storing the return of the function getTextAndDivs
       const response = getTextAndDivs(jsonInfo, description);
       // now pushing this result into feed[]
