@@ -8,7 +8,7 @@ module.exports = {
   }),
   verifySignature: token => jwt.verify(token, secretKey, (err, decoded) => {
     if (err) {
-      console.log(decoded);
+      console.log('Signature invalid: ', decoded);
       return false;
     }
     return true;

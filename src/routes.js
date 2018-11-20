@@ -89,8 +89,10 @@ module.exports = () => {
           res.send(runningEachItemAndCatchInfo(item));
         })
         .catch((error) => {
-          console.log(error);
+          console.log('aqui', error);
         });
+    } else {
+      res.send('Oops!\nPlease login again and refresh the token authentication :)')
     }
   });
 
