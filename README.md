@@ -14,7 +14,7 @@ that is a Brazilian TV program and a Brazilian magazine dedicated to the automot
 - [✓] Catches each item and their respective title, link, p, div//ul and div//img
 - [✓] Formats the response to Json
 - [✓] Test coverage (using JEST)
-- [✓] Code 
+- [✓] Organizable and readable code (using ESlint)
 - [✓] "Dockerized"
 - [✓] Implemented as a Webservice for test environments
 
@@ -73,6 +73,8 @@ Demo:
 1. As simple as possible, just run the command `npm test` into the project folder 
 
 #### To run ESlint 
+ESLint is a code linting that is frequently used to find problematic patterns or code that doesn't adhere to certain style guidelines.
+
 1. Run the command `$ ./node_modules/.bin/eslint yourfile.js`
 2. Change `yourfile.js` for the file wanted 
 3. exemple: `$ ./node_modules/.bin/eslint ./src/app.js`
