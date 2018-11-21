@@ -33,7 +33,7 @@ This project has a database simulated in a js file `/src/models/dbSimulator.js`,
 2. With the API running just do a `POST` request with the URL `http://localhost:3000/api/v1/login`
 3. Remember to pass username:`root` and password:`123` into the body of this request
 4. Copy the request response
-5. Open a `GET` request withe the URL `http://localhost:3000/api/v1/info` and choose the tab "Authorization" with the type `Bearer Token`
+5. Open a `GET` request with the URL `http://localhost:3000/api/v1/info` and choose the tab "Authorization" with the type `Bearer Token`
 6. Then paste the request response previously copied in step 4 into "Token" input and send the request
 
 Demo:
@@ -59,7 +59,7 @@ EXPOSE 3002
 6. Remember that as configured in Dockerfile the port now is `3002`
 7. Don't forget to pass username:`root` and password:`123` into the body of this request
 8. Copy the request response
-9. Open a `GET` request withe the URL `http://localhost:3000/api/v1/info` and choose the tab "Authorization" with the type `Bearer Token`
+9. Open a `GET` request with the URL `http://localhost:3000/api/v1/info` and choose the tab "Authorization" with the type `Bearer Token`
 10. Then paste the request response previously copied in step 7 into "Token" input and send the request
 
 
