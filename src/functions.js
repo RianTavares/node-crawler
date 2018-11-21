@@ -1,4 +1,14 @@
 /* eslint consistent-return: "error" */
+/*
+  FILE DESCRIPTION
+  This file is used to create the logic behind the bot.
+  Here are defined the functions that are called by the
+  request through the route "/info". 
+  Those functions works catching the website code
+  running tag by tag and returning the Json with the 
+  infos wanted.
+*/
+
 const cheerio = require('cheerio');
 
 /* function to merge the text of a <p> with the texts of his children

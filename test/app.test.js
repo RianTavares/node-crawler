@@ -1,3 +1,11 @@
+/*
+  FILE DESCRIPTION
+  On this file were developed some tests.
+  in these tests is intended to evaluate the response of 
+  the functions created by passing to each of them a simulated 
+  parameter and verifying their responses
+*/
+
 const cheerio = require('cheerio');
 const myMethods = require('../src/functions');
 
