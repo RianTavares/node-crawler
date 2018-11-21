@@ -1,10 +1,11 @@
 /* eslint no-console: ["error", { allow: ["log"] }] */
 /*
   FILE DESCRIPTION
-  On this file were developed the functions do 
+  On this file were developed the functions do
   create a token and to validate this token
 */
 const jwt = require('jsonwebtoken');
+
 const secretKey = 'RianNaInfoGlobo';
 
 module.exports = {
