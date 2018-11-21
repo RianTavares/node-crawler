@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/RianTavares/node-crawler" alt="AutoEsporteBot Logo"><img src="https://raw.githubusercontent.com/RianTavares/node-crawler/master/src/images/thumbnail_autoesporte-JS.png?token=AIhXfwE5prYOGa9CzQR5-gxQ9CNVTOvhks5b-3OUwA%3D%3D"></a></p>
+<p align="center"><a href="https://github.com/RianTavares/node-crawler" alt="AutoEsporteBot Logo"><img src="./src/images/thumbnail_autoesporte-JS.png"></a></p>
 
 <p align="center"><h1 align="center">AutoEsporteBot.js</h1></p>
 
@@ -38,7 +38,7 @@ This project has a database simulated in a js file `/src/models/dbSimulator.js`,
 6. Then paste the request response previously copied in step 4 into "Token" input and send the request
 
 Demo:
-<p align="center"><img src="https://raw.githubusercontent.com/RianTavares/node-crawler/master/src/images/video1.gif?token=AIhXf1fqxdqGMSfYkcsgJriCzdnJJWXFks5b-5PtwA%3D%3D"></p>
+<p align="center"><img src="./src/images/video1.gif"></p>
 
 #### Run the project using container
 
@@ -65,7 +65,7 @@ EXPOSE 3002
 
 
 Demo:
-<p align="center"><img src="https://raw.githubusercontent.com/RianTavares/node-crawler/master/src/images/video2.gif?token=AIhXf6TevJyuxawLiUhWxwAXkE6oJR8fks5b-5PuwA%3D%3D"></p>
+<p align="center"><img src="./src/images/video2.gif"></p>
 
 ## Last but not least
 
@@ -74,6 +74,9 @@ Demo:
 
 #### To run ESlint 
 ESLint is a code linting that is frequently used to find problematic patterns or code that doesn't adhere to certain style guidelines.
+
+Demo:
+<p align="center"><img src="./src/images/eslint.png"></p>
 
 1. Run the command `$ ./node_modules/.bin/eslint yourfile.js`
 2. Change `yourfile.js` for the file wanted 
