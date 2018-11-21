@@ -197,22 +197,22 @@ const responseTextArray = ' A quinta geração do Honda CR-V cresceu, ganhou mot
 // Tests
 /* if passed the rigth format to runningEachItemAndCatchInfo
 with content should return the responseFeed */
-test('it should return the crawler response in Json format', () => {
+test('It should return the crawler response in Json format', () => {
   expect(jsonCreator(feed)).toEqual(responseFeed);
 });
 
 /* if passed the wrong format to runningEachItemAndCatchInfo with
 content should return the responseFeedError */
-test('should return a string saying that was passed a string that is the wrong format', () => {
+test('Should return a message saying that a string, which is a wrong format, was passed', () => {
   expect(jsonCreator(string)).toBe(responseFeedError);
 });
 
 // if passed the rigth format to getTextAndDivs with content should return the respondeJsonInfo
-test('it should return json of item with description completed', () => {
+test('It should return a json of items with their description filled', () => {
   expect(getTextAndDivs(jsonInfo, description)).toEqual(responseJsonInfo);
 });
 
 // if passed the rigth format to mergeText with content should return the responseTextArray
-test('it should return a string that was merged right', () => {
+test('It should return a string that was merged right', () => {
   expect(mergeText(textArray)).toEqual(responseTextArray);
 });

@@ -14,6 +14,7 @@ that is a Brazilian TV program and a Brazilian magazine dedicated to the automot
 - [✓] Catches each item and their respective title, link, p, div//ul and div//img
 - [✓] Formats the response to Json
 - [✓] Test coverage (using JEST)
+- [✓] Code 
 - [✓] "Dockerized"
 - [✓] Implemented as a Webservice for test environments
 
@@ -31,7 +32,7 @@ This project has a database simulated in a js file `/src/models/dbSimulator.js`,
 
 1. Download [Postman](https://www.getpostman.com/) and install it
 2. With the API running just do a `POST` request with the URL `http://localhost:3000/api/v1/login`
-3. Remember to pass username:`root` and password:`123` into the body of this request
+3. Remember to pass username:`root` and password:`123` into the body of this request with the option `x-www-for-urlencoded` selected
 4. Copy the request response
 5. Open a `GET` request with the URL `http://localhost:3000/api/v1/info` and choose the tab "Authorization" with the type `Bearer Token`
 6. Then paste the request response previously copied in step 4 into "Token" input and send the request
@@ -57,7 +58,7 @@ EXPOSE 3002
 4. run `docker ps` if you want to see the containers started
 5. Now  with the API running into the container just do a `POST` request with the URL `http://localhost:3002/api/v1/login`
 6. Remember that as configured in Dockerfile the port now is `3002`
-7. Don't forget to pass username:`root` and password:`123` into the body of this request
+7. Don't forget to pass username:`root` and password:`123` into the body of this request with the option `x-www-for-urlencoded` selected
 8. Copy the request response
 9. Open a `GET` request with the URL `http://localhost:3000/api/v1/info` and choose the tab "Authorization" with the type `Bearer Token`
 10. Then paste the request response previously copied in step 7 into "Token" input and send the request
